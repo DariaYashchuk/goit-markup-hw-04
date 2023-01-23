@@ -1,0 +1,370 @@
+:root {
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+
+	--primary-bgc: #ffffff;
+	--primary-text-color: #ffffff;
+	--main-dark: #434455;
+	--color-header: #2e2f42;
+	--color-h: #2e2f42;
+	--footer-bgc: #2e2f42;
+	--footer-logo-color: #f4f4fd;
+	--footer-text-color: #e7e9fc;
+	--portfolio-team-bgc: #f4f4fd;
+	--main-blue: #4d5ae5;
+	--button-after: #404bbf;
+	--order-button-hover: #404bbf;
+	--nav-active: #404bbf;
+
+	--card-left-gap: 24px;
+	--card-top-gap: 48px;
+}
+
+/* Container */
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 1158px;
+}
+
+/* стилі = 0 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+body {
+	font-family: var(--main-font);
+	color: var(--main-dark);
+	background-color: var(--primary-bgc);
+	font-size: 16px;
+	letter-spacing: 0.02em;
+}
+.logo {
+	font-family: var(--secondary-font);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.3333;
+	letter-spacing: 0.02em;
+	color: var(--color-header);
+
+	display: flex;
+	margin-right: 76px;
+}
+footer .logo {
+	color: var(--footer-logo-color);
+
+	margin-bottom: 16px;
+}
+.logo > span {
+	color: var(--main-blue);
+}
+.logo:visited {
+	color: var(--color-header);
+}
+footer .logo:visited {
+	color: var(--footer-logo-color);
+}
+
+.header-full {
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+}
+.header-nav {
+	display: flex;
+
+	font-weight: 500;
+}
+
+.header-forborder {
+	border-bottom: 1px solid var(--footer-text-color);
+}
+
+.contacts {
+	display: flex;
+
+	margin-left: auto;
+}
+.contacts li + li {
+	margin-left: 40px;
+}
+.header-full a {
+	padding: 24px 0;
+	display: block;
+}
+.header-nav li:not(:last-child) {
+	margin-right: 40px;
+}
+
+.header-nav a,
+.contacts a {
+	color: var(--color-header);
+
+	line-height: 1.5;
+}
+
+.header-nav a.current {
+	color: var(--main-blue);
+}
+
+.header-nav a:active,
+.header-nav a:focus,
+.contacts a:active,
+.contacts a:focus,
+.header-nav a:hover,
+.contacts a:hover {
+	color: var(--nav-active);
+}
+
+p {
+	line-height: 1.5;
+}
+
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.business,
+footer {
+	background-color: var(--footer-bgc);
+}
+.business {
+	padding: 188px 0;
+	text-align: center;
+}
+.business h1 {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+
+	width: 496px;
+	margin-bottom: 48px;
+	display: block;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-order {
+	display: inline-block;
+	min-width: 169px;
+	height: 56px;
+
+	font-weight: 500;
+	color: var(--primary-text-color);
+	background-color: var(--main-blue);
+	cursor: pointer;
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-align: center;
+
+	border: 0;
+	padding: 16px 32px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+.button-order:hover {
+	background-color: var(--order-button-hover);
+}
+
+.advantages {
+	padding: 120px 0;
+}
+.advantages ul {
+	display: flex;
+	gap: 24px;
+}
+.advantages-content {
+	width: 264px;
+}
+
+.advantages-content h3 {
+	margin-bottom: 8px;
+}
+.advantages-text {
+	line-height: 1.5;
+}
+
+.what-doing-img {
+	display: flex;
+}
+.what-doing-img li + li {
+	margin-left: 24px;
+}
+
+.what-doing {
+	padding-bottom: 120px;
+}
+
+.h2-team-centet {
+	text-align: center;
+}
+
+.team ul {
+	display: flex;
+}
+
+.team li {
+	width: 264px;
+	background-color: var(--primary-bgc);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team li + li {
+	margin-left: 24px;
+}
+
+.advantages h2,
+.what-doing h2,
+.team h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	color: var(--color-h);
+	text-align: center;
+
+	margin-bottom: 72px;
+}
+
+.team-card-content {
+	padding: 32px 16px;
+	text-align: center;
+}
+.advantages h3,
+.team h3 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--color-h);
+
+	margin-bottom: 8px;
+}
+
+.portfolio {
+	display: flex;
+	margin-bottom: 72px;
+	justify-content: center;
+}
+.portfolio li:not(:last-child) {
+	margin-right: 24px;
+}
+.portfolio-btn {
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	border: 0;
+	padding: 12px 24px;
+
+	background-color: var(--portfolio-team-bgc);
+	font-weight: 500;
+	color: var(--main-blue);
+	cursor: pointer;
+
+	font-family: var(--main-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	color: var(--primary-text-color);
+	background-color: var(--main-blue);
+}
+.cards h2 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+.cards h3 {
+	line-height: 1.5;
+}
+
+.main-cards {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px 24px;
+}
+
+.card-content {
+	padding-top: 32px;
+	padding-left: 16px;
+	padding-bottom: 32px;
+	border: 1px solid var(--footer-text-color);
+	border-top: 0;
+}
+
+.item h2 {
+	margin-bottom: 8px;
+}
+
+.team {
+	background-color: var(--portfolio-team-bgc);
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+
+footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.footer-text {
+	color: var(--footer-text-color);
+	line-height: 1.5;
+	width: 264px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
