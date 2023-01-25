@@ -235,13 +235,15 @@ footer {
 	height: 112px;
 	background-color: var(--portfolio-team-bgc);
 	margin-bottom: 8px;
+
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
 }
 
 .adv-icons {
-	display: block;
 	height: 64px;
 	width: 64px;
-	margin: auto;
 }
 
 .what-doing-img {
@@ -263,7 +265,7 @@ footer {
 	display: flex;
 }
 
-.team li {
+.team-card {
 	width: 264px;
 	background-color: var(--primary-bgc);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -278,19 +280,24 @@ footer {
 	display: flex;
 }
 
-.team-media .team-soc {
+.team-soc-link {
 	display: inline-block;
+}
+
+.team-media .team-soc {
+	display: flex;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background-color: var(--main-blue);
-	padding-top: 12px;
+	align-items: center;
+	justify-content: center;
 }
 
 .team-media .team-soc:active,
-.team-media .team-soc:hover {
+.team-media .team-soc:hover,
+.team-media .team-soc:focus {
 	background-color: var(--button-after);
-	cursor: pointer;
 }
 
 .team-soc-icon {
@@ -405,7 +412,6 @@ footer {
 
 .customers h2 {
 	margin-bottom: 72px;
-	margin-top: 130px;
 }
 
 .customers-list {
@@ -415,59 +421,32 @@ footer {
 }
 
 .custom-content {
-	display: inline-block;
 	color: var(--icons);
 }
 
-.custom-content {
-	display: inline-block;
+.custom-icons {
 	width: 168px;
 	height: 88px;
 	text-align: center;
-	border: 1px solid var(--icons);
+	border: 1px solid currentColor;
 	border-radius: 4px;
+	color: currentColor;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.custom-icons {
+.custom-icons-svg {
+	display: inline-block;
 	fill: currentColor;
 }
 
-.custom-content:hover,
-.custom-content:active {
+.custom-icons:hover,
+.custom-icons:active,
+.custom-icons:focus {
 	color: var(--icons-after);
 	border: 1px solid var(--icons-after);
-}
-
-.custom-icon-1 {
-	width: 41px;
-	height: 46.97px;
-	margin-top: 23px;
-}
-.custom-icon-2 {
-	width: 40px;
-	height: 52px;
-	margin-top: 19px;
-}
-.custom-icon-3 {
-	width: 44px;
-	height: 41px;
-	margin-top: 25px;
-}
-.custom-icon-4 {
-	width: 84px;
-	height: 41px;
-	margin-top: 25px;
-}
-.custom-icon-5 {
-	width: 63px;
-	height: 45px;
-	margin-top: 22.77px;
-}
-.custom-icon-6 {
-	width: 94px;
-	height: 44px;
-	margin-top: 25px;
-	margin-top: 22.77px;
 }
 
 footer {
@@ -500,18 +479,19 @@ footer {
 }
 
 .footer-soc-medias {
+	display: flex;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	text-align: center;
-	padding-top: 8px;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-soc-medias:hover,
-.footer-soc-medias:active {
+.footer-soc-medias:active,
+.footer-soc-medias:focus {
 	background-color: var(--footer-medias-hover);
-	cursor: pointer;
 }
 
 .soc-medias-icon {
