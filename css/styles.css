@@ -15,7 +15,7 @@
 	--button-after: #404bbf;
 	--order-button-hover: #404bbf;
 	--nav-active: #404bbf;
-	--icons: #afb1b8;
+	--icons: #8e8f99;
 	--icons-after: #404bbf;
 	--footer-medias-hover: #31d0aa;
 
@@ -349,7 +349,6 @@ footer {
 	margin-right: 24px;
 }
 .portfolio-btn {
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 	border: 0;
 	padding: 12px 24px;
@@ -367,9 +366,11 @@ footer {
 }
 
 .portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:focus,
+.portfolio-btn:active {
 	color: var(--primary-text-color);
 	background-color: var(--main-blue);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .cards h2 {
 	font-weight: 500;
@@ -400,6 +401,19 @@ footer {
 	border-top: 0;
 }
 
+.card-link {
+	display: block;
+	outline: 1px solid var(--footer-text-color: );
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+	color: var(--main-dark);
+}
+
+.card-link:hover,
+.card-link:focus {
+	outline: 0.5px solid var(--portfolio-team-bgc)
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .item h2 {
 	margin-bottom: 8px;
 }
@@ -417,11 +431,6 @@ footer {
 .customers-list {
 	display: flex;
 	gap: 24px;
-	margin-bottom: 120px;
-}
-
-.custom-content {
-	color: var(--icons);
 }
 
 .custom-icons {
@@ -430,7 +439,7 @@ footer {
 	text-align: center;
 	border: 1px solid currentColor;
 	border-radius: 4px;
-	color: currentColor;
+	color: var(--icons);
 
 	display: flex;
 	justify-content: center;
